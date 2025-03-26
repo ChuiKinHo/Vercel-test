@@ -40,6 +40,8 @@ console.log(Env)
 console.log("Mongo: ")
 console.log(Env.MongoDB_URL)
 console.log(process.env.MongoDB_URL)
+console.log("Env: ")
+console.log(Env)
 mongoose
   .connect("mongodb+srv://admin:cHIWFcXV1UdyxzEu@db.dmfby.mongodb.net/ToiletGuide?retryWrites=true&w=majority&appName=ToiletGuide")
   // .connect(Env.MongoDB_URL)
