@@ -21,6 +21,7 @@ import { LiaMaleSolid, LiaFemaleSolid, LiaBathSolid } from "react-icons/lia";
 import { TbCameraPlus } from "react-icons/tb";
 import { PiWheelchair } from "react-icons/pi";
 import { LuShare2 } from "react-icons/lu";
+import AddFriendsModal from "@components/ProfilePage/Modals/AddFriendsModal";
 import ToiletDrawerNavigationBar from "@components/MapPage/Navigation/toiletDrawerNavigationBar";
 import AddToiletMultimediaModal from "../Modals/AddToiletMultimediaModal";
 import ShareToiletURLModal from "../Modals/ShareToiletURLModal";
