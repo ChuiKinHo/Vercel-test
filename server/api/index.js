@@ -35,13 +35,13 @@ app.use("/map", mapRoute);
 // MongoDB database configuration
 console.log("Env: ")
 console.log(Env)
-// console.log("process.env: ")
-// console.log(process.env)
+console.warn("process.env: ")
+console.warn(process.env)
 console.log("Mongo: ")
 console.log(Env.MongoDB_URL)
 console.log(process.env.MongoDB_URL)
-console.log("Env: ")
-console.log(Env)
+console.error("Env: ")
+console.error(Env)
 mongoose
   .connect("mongodb+srv://admin:cHIWFcXV1UdyxzEu@db.dmfby.mongodb.net/ToiletGuide?retryWrites=true&w=majority&appName=ToiletGuide")
   // .connect(Env.MongoDB_URL)
