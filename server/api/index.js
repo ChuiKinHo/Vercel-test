@@ -1,8 +1,8 @@
+import Env from "../src/utils/constants/Env.js";
 import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
-import Env from "../src/utils/constants/Env.js";
 import userRoute from "../src/routes/users/index.js";
 import mapRoute from "../src/routes/map/index.js";
 import cookieParser from "cookie-parser";
@@ -33,8 +33,9 @@ app.use("/admin", adminRoute);
 app.use("/map", mapRoute);
 
 // MongoDB database configuration
-console.log(Env)
+console.log("!: " + Env)
 console.log(Env.MongoDB_URL)
+console.log(process.env.MongoDB_URL)
 mongoose
   .connect(Env.MongoDB_URL)
   .then(async () => {
