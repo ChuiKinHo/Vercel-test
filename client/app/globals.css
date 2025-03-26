@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import 'flowbite'; */
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "react-toastify/dist/ReactToastify.css";
+@import "cropperjs/dist/cropper.css";
+@import "mapbox-gl/dist/mapbox-gl.css";
+
+
+@layer base {
+  :root {
+    --s1: hsl(220, 13%, 95%);
+    --s2: hsl(220, 13%, 91%);
+    --s3: hsl(216, 12%, 84%);
+    --s4: hsl(219, 11%, 65%);
+    --s5: hsl(220, 9%, 46%);
+    --s6: hsl(214, 14%, 34%);
+    --s7: hsl(217, 19%, 27%);
+    --s8: hsl(216, 29%, 17%);
+    --s9: hsl(222, 36%, 11%);
+
+    --text: hsl(0, 0%, 0%);
+    --gray-heavy: rgb(75 85 99);
+    --gray-light-semi: rgb(204 204 204);
+
+    --border: var(--s6);
+    --hover: var(--s2);
+    --shadow: var(--s6);
+
+    /* --url: #61a6fa;
+    --text-url: #61a6fa;
+    --red: #db545a;
+    --blue-light: #93c5fd;
+    --green: #66C450; */
+  }
+
+
+  html[data-theme='dark'] {
+    --s1: hsl(222, 36%, 11%);
+    --s2: hsl(216, 29%, 17%);
+    --s3: hsl(217, 19%, 27%);
+    --s4: hsl(214, 14%, 34%);
+    --s5: hsl(220, 9%, 46%);
+    --s6: hsl(219, 11%, 65%);
+    --s7: hsl(216, 12%, 84%);
+    --s8: hsl(220, 13%, 91%);
+    --s9: hsl(220, 13%, 95%);
+
+    --text: hsl(0, 0%, 97%);
+    --gray-heavy: rgb(204 204 204);;
+    --gray-light-semi: rgb(75 85 99);
+    /* --text-url: rgb(97, 166, 250); */
+  }
+
+  html[data-theme='dark1'] {
+    --s1: hsl(240, 30%, 11%);	
+    --s2: hsl(240, 30%, 17%);	
+    --s3: hsl(240, 30%, 27%);	
+    --s4: hsl(240, 30%, 34%);	
+    --s5: hsl(240, 30%, 46%);	
+    --s6: hsl(240, 30%, 65%);	
+    --s7: hsl(240, 30%, 84%);	
+    --s8: hsl(240, 30%, 91%);	
+    --s9: hsl(240, 30%, 96%);
+    
+    --text: hsl(0, 0%, 97%);
+    /* --text-url: rgb(97, 166, 250); */
+  }
+
+  html[data-theme='dark2'] {
+    --s1: hsl(120, 20%, 11%);	
+    --s2: hsl(120, 20%, 17%);	
+    --s3: hsl(120, 20%, 27%);	
+    --s4: hsl(120, 20%, 34%);	
+    --s5: hsl(120, 20%, 46%);	
+    --s6: hsl(120, 20%, 65%);	
+    --s7: hsl(120, 20%, 84%);	
+    --s8: hsl(120, 20%, 91%);	
+    --s9: hsl(120, 20%, 96%);	
+
+    --text: hsl(0, 0%, 97%);
+    /* --text-url: rgb(97, 166, 250); */
+  }
+}
+
+/*
+TODO::
+blue-600
+blue-400
+blue-100/50
+yellow-500
+yellow-400
+green-600
+green-300
+red-500
+red-400
+red-300
+red-100/50
+gray-400/50
+gray-300
+sky-500
+sky-400
+sky-300
+pink-300
+grey-heavy
+grey-semi
+*/
+.default {
+  --url: #61a6fa;
+  --text-url: #61a6fa;
+  --red: #db545a;
+  --blue-light: #93c5fd;
+  --green: #66C450;
+}
+.protanopia { /* no red */
+  /* --red100: #e0f2fe;
+  --red400: #38bdf8;
+  --red500: #0ea5e9;
+  --blue100: #fef3c7;
+  --blue300: #fcd34d;
+  --blue500: #f59e0b; */
+  /* --test: #60a5fa; */
+  --text-url: #1880FF;
+  --red: #FF4141;
+  --blue-light: #61A6FA;
+  --green: #30FF00;
+}
+.deuteranopia { /* no green */
+  --text-url: #1880FF;
+  --red: #FF4141;
+  --blue-light: #8AB3E4;
+  --green: #45D622;
+}
+.tritanopia { /* no blue */
+  --text-url: #61a6fa;
+  --red: #db545a;
+  --blue-light: #93c5fd;
+  --green: #66C450;
+}
+.achromatopsia { /* no red */
+  --text-url: #0842F5;
+  --red: #FF4141;
+  --blue-light: #06ECFF;
+  --green: #57FF6D;
+}
+
+.bg-red {
+  --tw-bg-opacity: 1
+}
+
+.profile-notif {
+  font-size: 0.5625rem; /* 9px */
+}
+
+.comment-grid-comment {
+  font-size: 0.6875rem; /* 11px */
+}
+
+.toilet-light-box-comment {
+  font-size: 0.8125rem; /* 13px */
+}
+
+.mapboxgl-map {
+  font-size: 1rem;
+}
+
+
+
+.border-red-warning-heavy {
+  border-color: var(--red);
+}
+
+.border-blue-light {
+  border-color: var(--blue-light);
+}
+
+
+
+.text-red-warning-heavy {
+  color: var(--red); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cropper-view-box,
+.cropper-face {
+  border-radius: 50%;
+}
+
+.scroll-bar-appearance::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+.scroll-bar-appearance::-webkit-scrollbar-thumb {
+  background: #3b3e41;
+  border-radius: 10px;
+}
+
+.scroll-bar-appearance::-webkit-scrollbar-track {
+  background-color: #bbbbbb88;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.mapboxgl-popup-close-button {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  color: #333;
+  border-radius: 50%;
+}
+
+.mapboxgl-ctrl-geolocate {
+  display: none !important;
+}
+
+

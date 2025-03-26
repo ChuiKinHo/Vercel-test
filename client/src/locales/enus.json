@@ -1,0 +1,619 @@
+{
+  "common_phases": {
+    "form": {
+      "labels": {
+        "email": "Email:",
+        "password": "Password:",
+        "confirmed_password": "Confirmed Password:",
+        "fullname": "Full name:",
+        "username": "Username:",
+        "phone": "Phone:",
+        "location": "Location:",
+        "new_password": "New Password:",
+        "confirmed_new_password": "Confirmed New Password:",
+        "original_password": "Original Password:",
+        "original_email": "Original Email:",
+        "new_email": "New Email:",
+        "your_comment": "Your Comment:",
+        "address": "Address",
+        "area": "Area",
+        "district": "District",
+        "sub_district": "Sub District",
+        "type_of_toilet": "Type of Toilet Location",
+        "toilet_categories": "Categories of Toilet",
+        "rating": "Rating",
+        "latitude": "Latitude",
+        "longitude": "Longitude",
+        "name_en": "Toilet Name (in English)",
+        "name_zh": "Toilet Name (in Chinese)"
+      },
+      "placeholders": {
+        "enter_email": "Enter Email",
+        "enter_password": "Enter Password",
+        "enter_confirmed_password": "Enter Confirmed Password",
+        "enter_fullname": "Enter fullname",
+        "enter_username": "Enter Username",
+        "enter_phone": "Enter Phone",
+        "enter_location": "Enter Location",
+        "enter_original_password": "Enter Original Password",
+        "enter_new_password": "Enter New Password",
+        "enter_original_email": "Enter Original Email:",
+        "enter_new_email": "Enter New Email",
+        "add_new_comment": "Add New Comment...",
+        "enter_address": "Enter Address",
+        "enter_district": "Enter District",
+        "enter_sub_district": "Enter Sub District",
+        "enter_area": "Enter Area",
+        "click_to_select": "Click to Select",
+        "enter_latitude": "Enter Latitude",
+        "enter_longitude": "Enter Longitude",
+        "enter_name_en": "Enter Toilet Name (in English)",
+        "enter_name_zh": "Enter Toilet Name (in Chinese)"
+      },
+      "validations": {
+        "email": {
+          "required": "Email is required",
+          "invalid_format": "Invalid Email Format"
+        },
+        "password": {
+          "required": "Password is required",
+          "min_required": "Password must be at least 8 characters long"
+        },
+        "confirmed_password": {
+          "required": "Confirmed Password is required",
+          "not_match": "Password do not match"
+        },
+        "new_confirmed_password": {
+          "required": "Confirmed Password is required",
+          "not_match": "Password do not match"
+        },
+        "code_verification": {
+          "invalid_format": "Verification code must be exactly 6 digits"
+        },
+        "fullname": {
+          "required": "Full Name is required",
+          "max_required": "Exceed the maximum word length (23 characters)"
+        },
+        "username": {
+          "required": "Username is required",
+          "max_required": "Exceed the maximum word length (23 characters)"
+        },
+        "phone": {
+          "invalid_format": "Phone number must contain only digits",
+          "invalid_phone_number": "Invalid phone number"
+        },
+        "comment": {
+          "required": "Comment is required"
+        },
+        "type_of_toilet": {
+          "invalid_format": "Invalid type of toilet",
+          "required": "Type of Toilet is required"
+        },
+        "toilet_address": {
+          "required": "Toilet address is required"
+        },
+        "toilet_files_upload": {
+          "video_invalid_format": "Invalid video format ( only allows .mp4, .webm )",
+          "image_invalid_format": "Invalid image format ( only allows .png, .jpeg, .svg, .webp )",
+          "max": "Exceed maximum no.of files ( Maximum: 10 )",
+          "duplicate": "Duplicate files. Please select another file.",
+          "file_exceed": "File exceeds",
+          "select_another_images": "Please select another file"
+        },
+        "toilet_name": {
+          "required": "Toilet name is required"
+        },
+        "latitude": {
+          "required": "Latitude is required",
+          "invalid": "Invalid Latitude ( Range: -90 to 90 )"
+        },
+        "longitude": {
+          "required": "Longitude is required",
+          "invalid": "Invalid Longitude ( Range: -180 to 180 )"
+        }
+      }
+    },
+    "tables": {
+      "admin_toilet_verification": {
+        "user": "User",
+        "toilet_address": "Toilet Address",
+        "type_of_toilet": "Type of Toilet",
+        "no_of_images": "No.of Images",
+        "no_of_videos": "No.of Videos",
+        "is_male": "Is Male?",
+        "is_female": "Is Female?",
+        "is_disabled": "Is Disabled?",
+        "have_bathroom": "Have Bathroom?",
+        "actions": "Actions",
+        "area": "Area",
+        "district": "District",
+        "sub_district": "Sub District"
+      },
+      "admin_multimedia_approval": {
+        "user": "User",
+        "toilet_address": "Toilet Address",
+        "type_of_toilet": "Type of Toilet",
+        "no_of_multimedia": "No.of Multimedia",
+        "actions": "Actions",
+        "area": "Area",
+        "district": "District",
+        "sub_district": "Sub District"
+      }
+    },
+    "button": {
+      "login": "Login",
+      "sign_up": "Sign Up",
+      "resend": "Resend",
+      "enter": "Enter",
+      "upload": "Upload",
+      "follow": "Follow",
+      "unfollow": "Unfollow",
+      "accept": "Accept",
+      "request_sent": "Friend request has been sent",
+      "submit": "Submit",
+      "approve": "Approve",
+      "next": "Next",
+      "auto_fill_in": "Auto Fill-in",
+      "advance_setting": "Advance Setting"
+    },
+    "dropdown": {
+      "banner": {
+        "edit_banner": "Edit Banner"
+      },
+      "phone": {
+        "hong_kong": "Hong Kong",
+        "macau": "Macau",
+        "taiwan": "Taiwan",
+        "china": "China"
+      },
+      "photo_gallery": {
+        "download": "Download",
+        "delete": "Delete"
+      }
+    },
+    "list_group": {
+      "languages": {
+        "en_us": "English",
+        "zh_tw": "Chinese (Tranditional)"
+      },
+      "settings": {
+        "change_password": "Change Password",
+        "change_email": "Change Email"
+      },
+      "type_of_toilet": {
+        "public": "Public",
+        "private": "Private",
+        "shopping_plaza": "Shopping Plaza",
+        "restaurant": "Restaurant"
+      },
+      "font_size": {
+        "S": "S",
+        "M": "M",
+        "L": "L"
+      },
+      "theme": {
+        "light": "Light",
+        "dark": "Dark",
+        "dark1": "Berry",
+        "dark2": "Forest"
+      },
+      "colorblind": {
+        "default": "Default",
+        "protanopia": "Sunset",
+        "deuteranopia": "Ocean",
+        "tritanopia": "Twilight",
+        "achromatopsia": "Monochrome"
+      }
+    },
+    "file_uploader": {
+      "drop_files": "Drag & Drop your files here or click to browse files",
+      "drop_here": "Drop the files here ...",
+      "select_another_files": "Please select another file...",
+      "invalid_file_format": "This file format is not supported. Please select another file"
+    },
+    "format": {
+      "time": {
+        "days": "days ago",
+        "hours": "hours ago",
+        "minutes": "minutes ago",
+        "seconds": "seconds ago"
+      }
+    }
+  },
+  "edit_information_modal": {
+    "title": "Edit Information"
+  },
+  "edit_avatar_modal": {
+    "title": "Edit User Avatar",
+    "image_exceed": "Image exceeds",
+    "select_another_images": "Please use another images",
+    "image_at_least": "Image should be at least"
+  },
+  "edit_banner_modal": {
+    "title": "Edit User Banner",
+    "image_exceed": "Image exceeds",
+    "select_another_images": "Please use another images",
+    "image_at_least": "Image should be at least"
+  },
+  "add_friends_modal": {
+    "title": "Add Friends",
+    "search_bar": "Search user..."
+  },
+  "change_language_modal": {
+    "title": "Change Language"
+  },
+  "change_email_modal": {
+    "title": "Change Email"
+  },
+  "change_password_modal": {
+    "title": "Change Password"
+  },
+  "change_font_size_modal": {
+    "title": "Change Font Size"
+  },
+  "change_theme_modal": {
+    "title": "Change Theme"
+  },
+  "change_colorblind_modal": {
+    "title": "Change Variation"
+  },
+  "filter_modal": {
+    "title": "Advance Filter",
+    "area": "Area",
+    "district": "District",
+    "sub_district": "Sub District"
+  },
+  "type_of_toilet_modal": {
+    "title": "Type of Toilet"
+  },
+  "edit_non_verified_toilet_modal": {
+    "title": "Edit Non-Verified Toilet"
+  },
+  "exchange_records_modal": {
+    "title": "Exchange Records",
+    "quantity": "Quantity"
+  },
+  "reward_tasks_modal": {
+    "title": "Reward Tasks",
+    "tasks": "Tasks",
+    "completed": "Completed",
+    "go": "Go",
+    "everyday_login": "Everyday Login",
+    "consecutive_weekly_login": "Consecutive Weekly Login",
+    "view_a_toilet": "View a Toilet",
+    "add_a_new_toilet_location": "Add a New Toilet Location",
+    "edit_profile_information": "Edit Profile Information",
+    "edit_user_avatar": "Edit User Avatar",
+    "add_comment_on_toilet": "Add Comment on Toilet",
+    "add_comment_on_photos_/_videos": "Add Comment on Photos / Videos",
+    "add_a_new_photo_/_video_in_existing_toilet": "Add a New Photo / Video in Existing Toilet"
+  },
+  "add_toilet_multimedia_modal": {
+    "title": "Add Images / Videos"
+  },
+  "edit_non_verified_multimedia_modal": {
+    "title": "Edit Non-Verified Multimedia",
+    "toilet_details": "Toilet Details",
+    "user_details": "User Details"
+  },
+  "marker_customization_modal": {
+    "title": "Marker Customization"
+  },
+  "area_list_group_modal": {
+    "title": "Select Area"
+  },
+  "district_list_group_modal": {
+    "title": "Select District"
+  },
+  "sub_district_list_group_modal": {
+    "title": "Select Sub District"
+  },
+  "share_toilet_url_modal": {
+    "title": "Share"
+  },
+  "login_required_modal":{
+    "title": "Login Required",
+    "prompt": "You need to login to perform this action",
+    "cancel": "Cancel",
+    "login": "Login"
+  },
+  "navigation_bar": {
+    "home": "Home",
+    "map": "Map",
+    "toilet_verification": "Verification",
+    "multimedia_approval": "Approval",
+    "profile": "Profile",
+    "setting": "Setting",
+    "rewards": "Rewards",
+    "logout": "Logout"
+  },
+  "notifications": {
+    "title": "Notification",
+    "friend_request": "request for friend",
+    "friend_accept": "accepts your friend request",
+    "coins_announcement": "Congratulations! You get ",
+    "coins": " coins"
+  },
+  "root_page": {
+    "loading": "Loading..."
+  },
+  "login_page": {
+    "title": "Login",
+    "forgot_password": "Forgot Password?",
+    "no_account": {
+      "title": "Do not have an account?",
+      "sign_up": "Sign up",
+      "login_as_guest": "Login As Guest"
+    },
+    "or": "Or"
+  },
+  "register_page": {
+    "title": "New User"
+  },
+  "register_verification_page": {
+    "title": "Email Verification"
+  },
+  "forgot_password_page": {
+    "title": "Forgot Password"
+  },
+  "reset_password_page": {
+    "title": "Reset Password"
+  },
+  "change_email_page": {
+    "title": "Change Email Success"
+  },
+  "profile_page": {
+    "title": "Personal Profile",
+    "tooltips": {
+      "profile": "Profile",
+      "edit": "Edit",
+      "gallery": "Gallery",
+      "friends": "Friends",
+      "add_friends": "Add Friends"
+    },
+    "account_details": {
+      "followers": "Followers",
+      "following": "Following"
+    }
+  },
+  "setting_page": {
+    "title": "Setting",
+    "language_setting": {
+      "title": "Language"
+    },
+    "font_size_setting": {
+      "title": "Font Size"
+    },
+    "theme_setting": {
+      "title": "Color Theme"
+    },
+    "colorblind_setting": {
+      "title": "Theme Variation"
+    }
+  },
+  "rewards_page": {
+    "title": "Rewards",
+    "quantity": "Quantity",
+    "exchange": "Exchange",
+    "redeemed": "Redeemed",
+    "tasks": "Tasks",
+    "records": "Records",
+    "coins": "coins",
+    "dropdown": {
+      "all": "All",
+      "coupon": "Coupon",
+      "souvenir": "Souvenir",
+      "one-time": "One-time",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "yearly": "Yearly"
+    },
+    "tooltips": {
+      "rewards": "Rewards"
+    }
+  },
+  "map_page": {
+    "navigation": {
+      "home": "Home",
+      "settings": "Settings",
+      "add_toilet": "Add Toilet",
+      "bookmarks": "Bookmarks"
+    },
+    "drawer": {
+      "rating": "Rating",
+      "views": "Views",
+      "comments": "Comments",
+      "settings": "Settings",
+      "nearby_circle_radius": "Nearby Circle radius",
+      "marker_customization": "Marker Custumization",
+      "language": "Language",
+      "m": "m",
+      "bookmark": "Bookmarks",
+      "search_a_toilet": "Search a Toilet..."
+    }
+  },
+  "toilet_verification_page": {
+    "title": "Toilet Verification"
+  },
+  "multimedia_approval_page": {
+    "title": "Multimedia Approval"
+  },
+  "toilet_categories": {
+    "male": "Male",
+    "female": "Female",
+    "disabled": "Disabled",
+    "bathroom": "Bathroom"
+  },
+  "toast": {
+    "success_messages": {
+      "non_verifiied_toilet_is_deleted_successfully": "Non-verifiied Toilet is Deleted Successfully",
+      "non_verifiied_multimedia_is_deleted_successfully": "Non-verifiied Multimedia is Deleted Successfully",
+      "non_verifiied_toilet_approves": "Non-verifiied Toilet Approves",
+      "non_verifiied_multimedia_approves": "Non-verifiied Multimedia Approves"
+    }
+  },
+  "custom_carousel": {
+    "no_image_video": "No Image / Video"
+  },
+  "hong_kong_address_components": {
+    "area": {
+      "hong_kong_island": "Hong Kong Island",
+      "new_territories": "New Territories",
+      "kowloon": "Kowloon",
+      "others": "Others"
+    },
+    "district": {
+      "central_&_western": "Central & Western",
+      "wan_chai": "Wan Chai",
+      "eastern": "Eastern",
+      "southern": "Southern",
+      "yau_tsim_mong": "Yau Tsim Mong",
+      "sham_shui_po": "Sham Shui Po",
+      "kowloon_city": "Kowloon City",
+      "wong_tai_sin": "Wong Tai Sin",
+      "kwun_tong": "Kwun Tong",
+      "kwai_tsing": "Kwai Tsing",
+      "tsuen_wan": "Tsuen Wan",
+      "tuen_mun": "Tuen Mun",
+      "yuen_long": "Yuen Long",
+      "north": "North",
+      "tai_po": "Tai Po",
+      "sha_tin": "Sha Tin",
+      "sai_kung": "Sai Kung",
+      "islands": "Islands",
+      "others": "Others"
+    },
+    "sub_district": {
+      "kennedy_town": "Kennedy Town",
+      "shek_tong_tsui": "Shek Tong Tsui",
+      "sai_ying_pun": "Sai Ying Pun",
+      "sheung_wan": "Sheung Wan",
+      "central": "Central",
+      "admiralty": "Admiralty",
+      "mid_levels": "Mid Levels",
+      "peak": "Peak",
+      "wan_chai": "Wan Chai",
+      "causeway_bay": "Causeway Bay",
+      "happy_valley": "Happy Valley",
+      "tai_hang": "Tai Hang",
+      "so_kon_po": "So Kon Po",
+      "jardine's_lookout": "Jardine's Lookout",
+      "tin_hau": "Tin Hau",
+      "braemar_hill": "Braemar Hill",
+      "north_point": "North Point",
+      "quarry_bay": "Quarry Bay",
+      "sai_wan_ho": "Sai Wan Ho",
+      "shau_kei_wan": "Shau Kei Wan",
+      "chai_wan": "Chai Wan",
+      "siu_sai_wan": "Siu Sai Wan",
+      "pok_fu_lam": "Pok Fu Lam",
+      "aberdeen": "Aberdeen",
+      "ap_lei_chau": "Ap Lei Chau",
+      "wong_chuk_hang": "Wong Chuk Hang",
+      "shouson_hill": "Shouson Hill",
+      "repulse_bay": "Repulse Bay",
+      "chung_hom_kok": "Chung Hom Kok",
+      "stanley": "Stanley",
+      "tai_tam": "Tai Tam",
+      "shek_o": "Shek O",
+      "tsim_sha_tsui": "Tsim Sha Tsui",
+      "yau_ma_tei": "Yau Ma Tei",
+      "west_kowloon_reclamation": "West Kowloon Reclamation",
+      "king's_park": "King's Park",
+      "mong_kok": "Mong Kok",
+      "tai_kok_tsui": "Tai Kok Tsui",
+      "mei_foo": "Mei Foo",
+      "lai_chi_kok": "Lai Chi Kok",
+      "cheung_sha_wan": "Cheung Sha Wan",
+      "sham_shui_po": "Sham Shui Po",
+      "shek_kip_mei": "Shek Kip Mei",
+      "yau_yat_tsuen": "Yau Yat Tsuen",
+      "tai_wo_ping": "Tai Wo Ping",
+      "stonecutters_island": "Stonecutters Island",
+      "hung_hom": "Hung Hom",
+      "to_kwa_wan": "To Kwa Wan",
+      "ma_tau_kok": "Ma Tau Kok",
+      "ma_tau_wai": "Ma Tau Wai",
+      "kai_tak": "Kai Tak",
+      "kowloon_city": "Kowloon City",
+      "ho_man_tin": "Ho Man Tin",
+      "kowloon_tong": "Kowloon Tong",
+      "beacon_hill": "Beacon Hill",
+      "san_po_kong": "San Po Kong",
+      "wong_tai_sin": "Wong Tai Sin",
+      "tung_tau": "Tung Tau",
+      "wang_tau_hom": "Wang Tau Hom",
+      "lok_fu": "Lok Fu",
+      "diamond_hill": "Diamond Hill",
+      "tsz_wan_shan": "Tsz Wan Shan",
+      "ngau_chi_wan": "Ngau Chi Wan",
+      "ping_shek": "Ping Shek",
+      "kowloon_bay": "Kowloon Bay",
+      "ngau_tau_kok": "Ngau Tau Kok",
+      "jordan_valley": "Jordan Valley",
+      "kwun_tong": "Kwun Tong",
+      "sau_mau_ping": "Sau Mau Ping",
+      "lam_tin": "Lam Tin",
+      "yau_tong": "Yau Tong",
+      "lei_yue_mun": "Lei Yue Mun",
+      "kwai_chung": "Kwai Chung",
+      "tsing_yi": "Tsing Yi",
+      "tsuen_wan": "Tsuen Wan",
+      "lei_muk_shue": "Lei Muk Shue",
+      "ting_kau": "Ting Kau",
+      "sham_tseng": "Sham Tseng",
+      "tsing_lung_tau": "Tsing Lung Tau",
+      "ma_wan": "Ma Wan",
+      "sunng_bay": "Sunng Bay",
+      "tai_lam_chung": "Tai Lam Chung",
+      "so_kwun_wat": "So Kwun Wat",
+      "tuen_mun": "Tuen Mun",
+      "lam_tei": "Lam Tei",
+      "hung_shui_kiu": "Hung Shui Kiu",
+      "ha_tsuen": "Ha Tsuen",
+      "lau_fau_shan": "Lau Fau Shan",
+      "tin_shui_wai": "Tin Shui Wai",
+      "yeun_long": "Yeun Long",
+      "san_tin": "San Tin",
+      "lok_ma_chau": "Lok Ma Chau",
+      "kam_tin": "Kam Tin",
+      "shek_kong": "Shek Kong",
+      "pat_heung": "Pat Heung",
+      "fanling": "Fanling",
+      "luen_wo_hui": "Luen Wo Hui",
+      "sheung_shui": "Sheung Shui",
+      "shek_wu_hui": "Shek Wu Hui",
+      "sha_tau_kok": "Sha Tau Kok",
+      "luk_keng": "Luk Keng",
+      "wu_kau_tang": "Wu Kau Tang",
+      "tai_po_market": "Tai Po Market",
+      "tai_po": "Tai Po",
+      "tai_po_kau": "Tai Po Kau",
+      "tai_mei_tuk": "Tai Mei Tuk",
+      "shuen_wan": "Shuen Wan",
+      "chueung_muk_tau": "Chueung Muk Tau",
+      "kei_ling_ha": "Kei Ling Ha",
+      "tai_wai": "Tai Wai",
+      "sha_tin": "Sha Tin",
+      "fo_tan": "Fo Tan",
+      "ma_liu_shui": "Ma Liu Shui",
+      "wu_kai_sha": "Wu Kai Sha",
+      "ma_on_shan": "Ma On Shan",
+      "clear_water_bay": "Clear Water Bay",
+      "sai_kung": "Sai Kung",
+      "tai_mong_tsai": "Tai Mong Tsai",
+      "tseung_kwan_o": "Tseung Kwan O",
+      "hang_hau": "Hang Hau",
+      "tiu_keng_leng": "Tiu Keng Leng",
+      "ma_yau_tong": "Ma Yau Tong",
+      "cheung_chau": "Cheung Chau",
+      "peng_chau": "Peng Chau",
+      "lantau_island": "Lantau Island",
+      "lamma_island": "Lamma Island",
+      "kwai_fong": "Kwai Fong",
+      "tiu_keng_wan": "Tiu Keng Wan",
+      "others": "Others"
+    }
+  }
+}

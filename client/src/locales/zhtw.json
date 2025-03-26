@@ -1,0 +1,621 @@
+{
+  "common_phases": {
+    "form": {
+      "labels": {
+        "email": "電郵：",
+        "password": "密碼：",
+        "confirmed_password": "確認密碼：",
+        "fullname": "名稱 （全名）：",
+        "username": "昵稱：",
+        "phone": "電話號碼：",
+        "location": "位置：",
+        "new_password": "新密碼:",
+        "confirmed_new_password": "確認新密碼：",
+        "original_password": "舊密碼：",
+        "original_email": "舊電郵：",
+        "new_email": "新電郵：",
+        "your_comment": "你的回應：",
+        "address": "地址",
+        "area": "區域",
+        "district": "區",
+        "sub_district": "市區",
+        "type_of_toilet": "厠所位置分類",
+        "toilet_categories": "厠所類別",
+        "rating": "評分",
+        "latitude": "緯度",
+        "longitude": "經度",
+        "name_en": "厠所名稱 (英文)",
+        "name_zh": "厠所名稱 (中文)"
+      },
+      "placeholders": {
+        "enter_email": "請輸入電郵",
+        "enter_password": "請輸入密碼",
+        "enter_confirmed_password": "請輸入確認密碼",
+        "enter_fullname": "請輸入名稱 （全名）",
+        "enter_username": "請輸入昵稱",
+        "enter_phone": "請輸入電話號碼",
+        "enter_location": "請輸入位置",
+        "enter_original_password": "請輸入舊密碼",
+        "enter_new_password": "請輸入新密碼",
+        "enter_original_email": "請輸入舊電郵",
+        "enter_new_email": "請輸入新電郵",
+        "add_new_comment": "新增回應...",
+        "enter_address": "請輸入地址",
+        "enter_district": "請輸入區",
+        "enter_sub_district": "請輸入市區",
+        "enter_area": "請輸入區域",
+        "click_to_select": "點擊以選擇",
+        "enter_latitude": "請輸入緯度",
+        "enter_longitude": "請輸入經度",
+        "enter_name_en": "請輸入厠所名稱 (英文)",
+        "enter_name_zh": "請輸入厠所名稱 (中文)"
+      },
+      "validations": {
+        "email": {
+          "required": "電郵不能為空",
+          "invalid_format": "電郵格式無效"
+        },
+        "password": {
+          "required": "密碼不能為空",
+          "min_required": "密碼必須為至少 8 個字符長"
+        },
+        "confirmed_password": {
+          "required": "確認密碼不能為空",
+          "not_match": "密碼不匹配"
+        },
+        "new_confirmed_password": {
+          "required": "確認密碼不能為空",
+          "not_match": "密碼不匹配"
+        },
+        "code_verification": {
+          "invalid_format": "驗證碼必須為 6 個字符長"
+        },
+        "fullname": {
+          "required": "名稱（全名）不能為空",
+          "max_required": "超出最大的單字長度 （23字符）"
+        },
+        "username": {
+          "required": "昵稱不能為空",
+          "max_required": "超出最大的單字長度 （23字符）"
+        },
+        "phone": {
+          "invalid_format": "電話號碼必須由數字組成",
+          "invalid_phone_number": "電話號碼無效"
+        },
+        "comment": {
+          "required": "留言不能為空"
+        },
+        "toilet_address": {
+          "required": "厠所地址不能為空"
+        },
+        "type_of_toilet": {
+          "invalid_format": "厠所位置分類無效",
+          "required": "厠所位置分類不能為空"
+        },
+        "toilet_files_upload": {
+          "video_invalid_format": "影片格式無效 （只支援 .mp4, .webm）",
+          "image_invalid_format": "圖片格式無效 （只支援 .png, .jpeg, .svg, .webp）",
+          "max": "超出上載次數上限 (上限： 10 )",
+          "duplicate": "文件重複上載，請重新選擇上載文件",
+          "image_exceed": "文件大於",
+          "select_another_images": "請上載其他文件"
+        },
+        "toilet_name": {
+          "required": "厠所名稱不能為空"
+        },
+        "latitude": {
+          "required": "緯度不能為空",
+          "invalid": "緯度無效 （範圍: -90 to 90)"
+        },
+        "longitude": {
+          "required": "經度不能為空",
+          "invalid": "經度無效 （範圍: -180 to 180)"
+        }
+      }
+    },
+    "tables": {
+      "admin_toilet_verification": {
+        "user": "用戶",
+        "toilet_address": "厠所地址",
+        "type_of_toilet": "厠所位置分類",
+        "no_of_images": "圖片數量",
+        "no_of_videos": "影片數量",
+        "is_male": "男士？",
+        "is_female": "女士？",
+        "is_disabled": "殘障？",
+        "have_bathroom": "浴室？",
+        "actions": "行動",
+        "area": "區域",
+        "district": "區",
+        "sub_district": "市區"
+      },
+      "admin_multimedia_approval": {
+        "user": "用戶",
+        "no_of_multimedia": "媒體數量",
+        "toilet_address": "厠所地址",
+        "type_of_toilet": "厠所位置分類",
+        "actions": "行動",
+        "area": "區域",
+        "district": "區",
+        "sub_district": "市區"
+      }
+    },
+    "button": {
+      "login": "登入",
+      "sign_up": "建立",
+      "resend": "重新發送",
+      "enter": "確認",
+      "upload": "上載",
+      "follow": "追蹤對方",
+      "unfollow": "取消追蹤",
+      "accept": "確認",
+      "request_sent": "好友請求已發送",
+      "submit": "提交",
+      "approve": "核准",
+      "next": "下一頁",
+      "auto_fill_in": "自動填寫資料",
+      "advance_setting": "進階設定"
+    },
+    "dropdown": {
+      "banner": {
+        "edit_banner": "編輯個人橫幅"
+      },
+      "phone": {
+        "hong_kong": "香港",
+        "macau": "澳門",
+        "taiwan": "台灣",
+        "china": "中華人民共和國"
+      },
+      "photo_gallery": {
+        "download": "下載",
+        "delete": "刪除"
+      }
+    },
+    "list_group": {
+      "languages": {
+        "en_us": "英文",
+        "zh_tw": "中文 （繁體）"
+      },
+      "settings": {
+        "change_password": "變更密碼",
+        "change_email": "變更電郵"
+      },
+      "type_of_toilet": {
+        "public": "公眾",
+        "private": "私人",
+        "shopping_plaza": "商場",
+        "restaurant": "食肆"
+      },
+      "font_size": {
+        "S": "小",
+        "M": "中",
+        "L": "大"
+      },
+      "theme": {
+        "light": "淺色",
+        "dark": "深色",
+        "dark1": "莓果",
+        "dark2": "森林"
+      },
+      "colorblind": {
+        "default": "預設",
+        "protanopia": "日落",
+        "deuteranopia": "海洋",
+        "tritanopia": "暮光",
+        "achromatopsia": "單色"
+      }
+    },
+    "file_uploader": {
+      "drop_files": "拖放 & 瀏覽文件至這裡",
+      "drop_here": "拖放文件至這裡...",
+      "select_another_files": "請選擇其他文件...",
+      "invalid_file_format": "不支持此文件格式，請瀏覽其他文件"
+    },
+    "format": {
+      "time": {
+        "days": "日前",
+        "hours": "小時前",
+        "minutes": "分鐘前",
+        "seconds": "秒前"
+      }
+    }
+  },
+  "edit_information_modal": {
+    "title": "編輯個人資料"
+  },
+  "edit_avatar_modal": {
+    "title": "編輯個人頭像",
+    "image_exceed": "圖片大於",
+    "select_another_images": "請瀏覽其他文件",
+    "image_at_least": "圖片至少為"
+  },
+  "edit_banner_modal": {
+    "title": "編輯個人橫幅",
+    "image_exceed": "圖片大於",
+    "select_another_images": "請瀏覽其他文件",
+    "image_at_least": "圖片至少為"
+  },
+  "add_friends_modal": {
+    "title": "新增好友",
+    "search_bar": "搜尋好友..."
+  },
+  "change_language_modal": {
+    "title": "變更語言"
+  },
+  "change_email_modal": {
+    "title": "變更電郵"
+  },
+  "change_password_modal": {
+    "title": "變更密碼"
+  },
+  "change_font_size_modal": {
+    "title": "變更字體大小"
+  },
+  "change_theme_modal": {
+    "title": "變更顔色主題"
+  },
+  "change_colorblind_modal": {
+    "title": "變更主題變化"
+  },
+  "filter_modal": {
+    "title": "進階篩選",
+    "area": "區域",
+    "district": "區",
+    "sub_district": "市區"
+  },
+  "type_of_toilet_modal": {
+    "title": "厠所種類"
+  },
+  "edit_non_verified_toilet_modal": {
+    "title": "編輯未驗證厠所"
+  },
+  "exchange_records_modal": {
+    "title": "獎賞記錄",
+    "quantity": "數量"
+  },
+  "reward_tasks_modal": {
+    "title": "任務",
+    "tasks": "任務",
+    "completed": "已完成",
+    "go": "去完成",
+    "everyday_login": "每日登入",
+    "consecutive_weekly_login": "連續每週登入",
+    "view_a_toilet": "查看廁所",
+    "add_a_new_toilet_location": "新增廁所地點",
+    "edit_profile_information": "編輯個人資料",
+    "edit_user_avatar": "編輯用戶頭像",
+    "add_comment_on_toilet": "為廁所添加評論",
+    "add_comment_on_photos_/_videos": "為照片 / 影片添加評論",
+    "add_a_new_photo_/_video_in_existing_toilet": "為現有廁所添加新照片 / 影片"
+  },
+  "add_toilet_multimedia_modal": {
+    "title": "新增相片 / 影片"
+  },
+  "edit_non_verified_multimedia_modal": {
+    "title": "編輯未驗證媒體",
+    "toilet_details": "厠所詳情",
+    "user_details": "用戶詳情"
+  },
+  "marker_customization_modal": {
+    "title": "更改圖標樣式"
+  },
+  "area_list_group_modal": {
+    "title": "選擇區域"
+  },
+  "district_list_group_modal": {
+    "title": "選擇區"
+  },
+  "sub_district_list_group_modal": {
+    "title": "選擇市區"
+  },
+  "share_toilet_url_modal": {
+    "title": "分享"
+  },
+  "login_required_modal": {
+    "title": "登入提醒",
+    "prompt": "您需要登入才能執行此操作",
+    "cancel": "取消",
+    "login": "登入賬戶"
+  },
+  "navigation_bar": {
+    "home": "首頁",
+    "map": "地圖",
+    "toilet_verification": "驗證（厠所）",
+    "multimedia_approval": "驗證（媒體）",
+    "profile": "個人",
+    "rewards": "獎賞",
+    "setting": "設定",
+    "logout": "登出"
+  },
+  "notifications": {
+    "title": "通知",
+    "friend_request": "要求成為好友",
+    "friend_accept": "已接受你的好友請求",
+    "coins_announcement": "恭喜! 你已獲得 ",
+    "coins": " 硬幣"
+  },
+  "root_page": {
+    "loading": "載入中..."
+  },
+  "login_page": {
+    "title": "登入賬戶",
+    "forgot_password": "忘記密碼？",
+    "no_account": {
+      "title": "沒有賬戶？",
+      "sign_up": "建立新的賬戶",
+      "login_as_guest": "以訪客身份登入"
+    },
+    "or": "或"
+  },
+  "register_page": {
+    "title": "建立新用戶"
+  },
+  "register_verification_page": {
+    "title": "驗證電子郵件"
+  },
+  "forgot_password_page": {
+    "title": "忘記密碼"
+  },
+  "reset_password_page": {
+    "title": "重置密碼"
+  },
+  "change_email_page": {
+    "title": "變更電郵成功"
+  },
+  "profile_page": {
+    "title": "個人檔案",
+    "tooltips": {
+      "profile": "個人資料",
+      "edit": "編輯",
+      "gallery": "相簿",
+      "friends": "好友",
+      "add_friends": "新增好友"
+    },
+    "account_details": {
+      "followers": "粉絲",
+      "following": "追蹤中"
+    }
+  },
+  "setting_page": {
+    "title": "設定",
+    "language_setting": {
+      "title": "語言"
+    },
+    "font_size_setting": {
+      "title": "字體大小"
+    },
+    "theme_setting": {
+      "title": "顔色主題"
+    },
+    "colorblind_setting": {
+      "title": "主題變化"
+    }
+  },
+  "rewards_page": {
+    "title": "獎賞",
+    "rewards": "獎賞",
+    "quantity": "數量",
+    "exchange": "兌換",
+    "redeemed": "已兌換",
+    "tasks": "任務",
+    "records": "獎勵記錄",
+    "coins": "硬幣",
+    "dropdown": {
+      "all": "全部",
+      "coupon": "禮劵",
+      "souvenir": "禮品",
+      "one-time": "一次性",
+      "daily": "每日",
+      "weekly": "每周",
+      "monthly": "每月",
+      "yearly": "每年"
+    },
+    "tooltips": {
+      "rewards": "獎賞"
+    }
+  },
+  "map_page": {
+    "navigation": {
+      "home": "主頁",
+      "settings": "設定",
+      "add_toilet": "新增厠所",
+      "bookmarks": "標簽"
+    },
+    "drawer": {
+      "rating": "評分",
+      "views": "觀看次數",
+      "comments": "評論",
+      "settings": "設定",
+      "nearby_circle_radius": "圓型（附近）半徑",
+      "marker_customization": "更改圖標樣式",
+      "language": "語言",
+      "m": "米",
+      "bookmark": "標簽",
+      "search_a_toilet": "搜尋厠所..."
+    }
+  },
+  "toilet_verification_page": {
+    "title": "驗證（厠所）"
+  },
+  "multimedia_approval_page": {
+    "title": "驗證（媒體）"
+  },
+  "toilet_categories": {
+    "male": "男士",
+    "female": "女士",
+    "disabled": "殘障",
+    "bathroom": "浴室"
+  },
+  "toast": {
+    "success_messages": {
+      "non_verifiied_toilet_is_deleted_successfully": "成功移除未驗證厠所",
+      "non_verifiied_multimedia_is_deleted_successfully": "成功移除未驗證媒體",
+      "non_verifiied_toilet_approves": "已驗證厠所",
+      "non_verifiied_multimedia_approves": "已驗證媒體"
+    }
+  },
+  "custom_carousel": {
+    "no_image_video": "無相片 / 影片"
+  },
+  "hong_kong_address_components": {
+    "area": {
+      "hong_kong_island": "香港島",
+      "new_territories": "新界",
+      "kowloon": "九龍",
+      "others": "其他"
+    },
+    "district": {
+      "central_&_western": "中西區",
+      "wan_chai": "灣仔",
+      "eastern": "東區",
+      "southern": "南區",
+      "yau_tsim_mong": "油尖旺",
+      "sham_shui_po": "深水埗",
+      "kowloon_city": "九龍城",
+      "wong_tai_sin": "黃大仙",
+      "kwun_tong": "觀塘",
+      "kwai_tsing": "葵青",
+      "tsuen_wan": "荃灣",
+      "tuen_mun": "屯門",
+      "yuen_long": "元朗",
+      "north": "北區",
+      "tai_po": "大埔",
+      "sha_tin": "沙田",
+      "sai_kung": "西貢",
+      "islands": "離島",
+      "others": "其他"
+    },
+    "sub_district": {
+      "kennedy_town": "堅尼地城",
+      "shek_tong_tsui": "石塘咀",
+      "sai_ying_pun": "西營盤",
+      "sheung_wan": "上環",
+      "central": "中環",
+      "admiralty": "金鐘",
+      "mid_levels": "半山區",
+      "peak": "山頂",
+      "wan_chai": "灣仔",
+      "causeway_bay": "銅鑼灣",
+      "happy_valley": "跑馬地",
+      "tai_hang": "大坑",
+      "so_kon_po": "掃桿埔",
+      "jardine's_lookout": "渣甸山",
+      "tin_hau": "天后",
+      "braemar_hill": "寶馬山",
+      "north_point": "北角",
+      "quarry_bay": "鰂魚涌",
+      "sai_wan_ho": "西灣河",
+      "shau_kei_wan": "筲箕灣",
+      "chai_wan_": "柴灣",
+      "siu_sai_wan": "小西灣",
+      "pok_fu_lam": "薄扶林",
+      "aberdeen": "香港仔",
+      "ap_lei_chau": "鴨脷洲",
+      "wong_chuk_hang": "黃竹坑",
+      "shouson_hill": "壽臣山",
+      "repulse_bay": "淺水灣",
+      "chung_hom_kok": "舂坎角",
+      "stanley": "赤柱",
+      "tai_tam": "大潭",
+      "shek_o": "石澳",
+      "tsim_sha_tsui": "尖沙咀",
+      "yau_ma_tei": "油麻地",
+      "west_kowloon_reclamation": "西九龍填海區",
+      "king's_park": "京士柏",
+      "mong_kok": "旺角",
+      "tai_kok_tsui": "大角咀",
+      "mei_foo": "美孚",
+      "lai_chi_kok": "荔枝角",
+      "cheung_sha_wan": "長沙灣",
+      "sham_shui_po": "深水埗",
+      "shek_kip_mei": "石硤尾",
+      "yau_yat_tsuen": "又一村",
+      "tai_wo_ping": "大窩坪",
+      "stonecutters_island": "昂船洲",
+      "hung_hom": "紅磡",
+      "to_kwa_wan": "土瓜灣",
+      "ma_tau_kok": "馬頭角",
+      "ma_tau_wai": "馬頭圍",
+      "kai_tak": "啟德",
+      "kowloon_city": "九龍城",
+      "ho_man_tin": "何文田",
+      "kowloon_tong": "九龍塘",
+      "beacon_hill": "筆架山",
+      "san_po_kong": "新蒲崗",
+      "wong_tai_sin": "黃大仙",
+      "tung_tau": "東頭",
+      "wang_tau_hom": "橫頭磡",
+      "lok_fu": "樂富",
+      "diamond_hill": "鑽石山",
+      "tsz_wan_shan": "慈雲山",
+      "ngau_chi_wan": "牛池灣",
+      "ping_shek": "坪石",
+      "kowloon_bay": "九龍灣",
+      "ngau_tau_kok": "牛頭角",
+      "jordan_valley": "佐敦谷",
+      "kwun_tong": "觀塘",
+      "sau_mau_ping": "秀茂坪",
+      "lam_tin": "藍田",
+      "yau_tong": "油塘",
+      "lei_yue_mun": "鯉魚門",
+      "kwai_chung": "葵涌",
+      "tsing_yi": "青衣",
+      "tsuen_wan": "荃灣",
+      "lei_muk_shue": "梨木樹",
+      "ting_kau": "汀九",
+      "sham_tseng": "深井",
+      "tsing_lung_tau": "青龍頭",
+      "ma_wan": "馬灣",
+      "sunng_bay": "欣澳",
+      "tai_lam_chung": "大欖涌",
+      "so_kwun_wat": "掃管笏",
+      "tuen_mun": "屯門",
+      "lam_tei": "藍地",
+      "hung_shui_kiu": "洪水橋",
+      "ha_tsuen": "廈村",
+      "lau_fau_shan": "流浮山",
+      "tin_shui_wai": "天水圍",
+      "yeun_long": "元朗",
+      "san_tin": "新田",
+      "lok_ma_chau": "落馬洲",
+      "kam_tin": "錦田",
+      "shek_kong": "石崗",
+      "pat_heung": "八鄉",
+      "fanling": "粉嶺",
+      "luen_wo_hui": "聯和墟",
+      "sheung_shui": "上水",
+      "shek_wu_hui": "石湖墟",
+      "sha_tau_kok": "沙頭角",
+      "luk_keng": "鹿頸",
+      "wu_kau_tang": "烏蛟騰",
+      "tai_po_market": "大埔墟",
+      "tai_po": "大埔",
+      "tai_po_kau": "大埔滘",
+      "tai_mei_tuk": "大尾篤",
+      "shuen_wan": "船灣",
+      "chueung_muk_tau": "樟木頭",
+      "kei_ling_ha": "企嶺下",
+      "tai_wai": "大圍",
+      "sha_tin": "沙田",
+      "fo_tan": "火炭",
+      "ma_liu_shui": "馬料水",
+      "wu_kai_sha": "烏溪沙",
+      "ma_on_shan": "馬鞍山",
+      "clear_water_bay": "清水灣",
+      "sai_kung": "西貢",
+      "tai_mong_tsai": "大網仔",
+      "tseung_kwan_o": "將軍澳",
+      "hang_hau": "坑口",
+      "tiu_keng_leng": "調景嶺",
+      "ma_yau_tong": "馬游塘",
+      "cheung_chau": "長洲",
+      "peng_chau": "坪洲",
+      "lantau_island": "大嶼山",
+      "chai_wan": "柴灣",
+      "lamma_island": "南丫島",
+      "kwai_fong": "葵芳",
+      "tiu_keng_wan": "調景灣",
+      "others": "其他"
+    }
+  }
+}
