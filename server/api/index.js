@@ -33,9 +33,11 @@ app.use("/admin", adminRoute);
 app.use("/map", mapRoute);
 
 // MongoDB database configuration
-console.log("!:")
+console.log("Env: ")
 console.log(Env)
+console.log("process.env: ")
 console.log(process.env)
+console.log("Mongo: ")
 console.log(Env.MongoDB_URL)
 console.log(process.env.MongoDB_URL)
 mongoose
