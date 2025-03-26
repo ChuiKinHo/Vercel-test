@@ -33,6 +33,8 @@ app.use("/admin", adminRoute);
 app.use("/map", mapRoute);
 
 // MongoDB database configuration
+console.log(Env)
+console.log(Env.MongoDB_URL)
 mongoose
   .connect(Env.MongoDB_URL)
   .then(async () => {
